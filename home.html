@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap Main load-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- NOT essential? <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- MY Script JS -->
+    <script src="script.js"></script>
+    <!-- MY Style CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h1 class ="center">Discovering History</h1>
+</head>
+
+<body>
+    <!-- Start Modal -->
+    <div id="startMod" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><b>Welcome!</b></h4>
+                </div>
+
+                <!-- Question answers -->
+                <div class="input-group">
+                    <p>This website is designed as an engaging learning platform that gamifies the exploration of
+                        fascinating technological facts. Our aim is to make learning enjoyable and interactive by
+                        presenting fun and insightful information about various aspects of technology.</p>
+                    <p>Whether you're a tech enthusiast or just curious about the wonders of innovation, this site
+                        offers an immersive experience where you can discover, learn, and be entertained. Join us on
+                        this educational journey as we uncover the exciting world of technology together!</p>
+                    <p> <b><i>NOTE: Most to all source material is derrived from Wikipedia and may be incorrect</i></b>
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Modal-->
+
+    <button type="button" class="btn" data-toggle="modal" data-target="#profileMod">Stats</button>
+    <!--<button type="button" class="btn" data-toggle="modal" data-target="#reviewMod">Review</button> -->
+    <button type="button" class="btn" data-toggle="modal" data-target="#helpMod">Help</button>
+    
+    <!-- Profile Modal -->
+    <div id="profileMod" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Profile Stats</h4>
+                </div>
+                <!-- modal-body -->
+                <div class="modal-body">
+                    <h4 for="outputright">Right Answers:</h4>
+                    <p id="outputright"> </p>
+                    <h4 for="outputwrong">Wrong Answers:</h4>
+                    <p id="outputwrong"> </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Profile Modal-->
+    
+    <!-- Review Modal -->
+    <div id="reviewMod" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Review Questions</h4>
+                </div>
+                <!-- modal-body -->
+                <div class="modal-body">
+                   
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Review Modal-->
+    
+    <!-- Help Modal -->
+    <div id="helpMod" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Help</h4>
+                </div>
+                <!-- modal-body -->
+                <div class="modal-body">
+                    <p><b>Timeline Column:</b></p>
+                    <p>This column displays a timeline, each correspond to a specific year and event in computer history. When a user clicks on a button, it navigates to its article on the right column. These articles provide a short detailed article about the historical event.</p>
+                    <p><b>Profile:</b></p>
+                    <p>The profile section tracks the user's progress and performance. It records the number of correct and incorrect answers provided during the review process. This feature enables users to monitor their learning progress and identify areas where they may need improvement.</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Help Modal -->    
+
+ <p></p>
+
+    <div class="row">
+        <div class="column timeline-column">
+            <div class="timeline">
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#bug')" value="1947 Bug">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#eniac')"
+                            value="1949 ENIAC">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#harddrive')"
+                            value="1957 Hard Drive">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#spacewar')"
+                            value="1962 Spacewar">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#mouse')"
+                            value="1964 Mouse">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#virus')"
+                            value="1971 Virus">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#email')"
+                            value="1971 Email">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#webcam')"
+                            value="1991 Webcam">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <input type="button" class="btn-timeline" onclick="setURL('iframe.html#chess')"
+                            value="1997 Deep Blue">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column iframe-column">
+            <p> <iframe id="iframe" sandbox="allow-scripts allow-same-origin" src="iframe.html" height="500"
+                    width='1800' style="max-width:100%" frameborder='0' marginheight='0' marginwidth='0'></iframe></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
